@@ -8,11 +8,14 @@
     <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/free-b-characters-character-alphabet-letter-36044.png" type="image/x-icon">
     <!-- Link to Font Awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: url('https://media.istockphoto.com/id/1175053786/photo/empty-dark-blue-with-black-vignette-studio-well-use-as-background.webp?b=1&s=170667a&w=0&k=20&c=9nhEI3-wIOd3x6nWXP-jcC5Rybfr52YDU_dI2QScNoE=') no-repeat center center fixed; /* Replace with your image URL */
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('https://media.istockphoto.com/id/1175053786/photo/empty-dark-blue-with-black-vignette-studio-well-use-as-background.webp?b=1&s=170667a&w=0&k=20&c=9nhEI3-wIOd3x6nWXP-jcC5Rybfr52YDU_dI2QScNoE=') no-repeat center center fixed; /* Background with gradient */
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -22,10 +25,10 @@
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            background: rgba(0, 0, 50, 0.8); /* Darker, more elegant background */
             padding: 20px 40px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Box shadow for a more polished look */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -38,6 +41,7 @@
             border: 5px solid #fff;
             margin-bottom: 20px;
             overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add shadow to profile image */
             animation: fadeIn 2s;
         }
 
@@ -52,10 +56,11 @@
             to { opacity: 1; }
         }
 
-        h1 {
+        h2 {
             margin: 0 0 20px;
-            font-size: 36px;
-            color: #333;
+            font-size: 32px;
+            color: #fff;
+            font-weight: 700; /* Bold text */
         }
 
         .social-icons {
@@ -73,11 +78,12 @@
             line-height: 50px;
             border-radius: 50%;
             text-align: center;
-            transition: transform 0.3s, background-color 0.3s; /* Animation for smooth color change and transformation */
+            transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
         }
 
         .social-icons a:hover {
             transform: scale(1.2); /* Scale up on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
         }
 
         .social-icons a:nth-child(1) {
@@ -97,7 +103,7 @@
         }
 
         @media (max-width: 768px) {
-            h1 {
+            h2 {
                 font-size: 28px;
             }
 
@@ -115,7 +121,7 @@
         }
 
         @media (max-width: 480px) {
-            h1 {
+            h2 {
                 font-size: 24px;
             }
 
